@@ -38,6 +38,7 @@ public class HelloServlet extends HttpServlet {
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 * 
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		StringBuilder buffer = new StringBuilder();
@@ -46,6 +47,7 @@ public class HelloServlet extends HttpServlet {
         while ((line = reader.readLine()) != null) {
             buffer.append(line);
         }
+        //The doPost method simply echoes back the post.  Add your own business logic here.
         String data = buffer.toString();
         response.setContentType("text/json");
         PrintWriter out = response.getWriter();
