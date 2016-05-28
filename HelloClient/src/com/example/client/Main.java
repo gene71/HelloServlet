@@ -20,7 +20,7 @@ public class Main {
         //JSONBuilder jb = new JSONBuilder();
 
 
-         URL url = new URL("http://localhost:8080/HelloTomcat/Hello");
+         URL url = new URL("http://localhost:8080/HelloServlet/HelloServlet");
          URLConnection conn = url.openConnection();
          conn.setDoOutput(true);
          OutputStreamWriter writer = new OutputStreamWriter(conn.getOutputStream());
