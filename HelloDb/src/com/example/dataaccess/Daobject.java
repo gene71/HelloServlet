@@ -23,6 +23,8 @@ public class Daobject {
 	
 	//constructor
 	public Daobject() throws Exception{
+		
+		    //you need the mysql driver located here: https://dev.mysql.com/downloads/connector/j/
 		    // This will load the MySQL driver, each DB has its own driver
 	        Class.forName("com.mysql.jdbc.Driver");
 	        //setup your connection
